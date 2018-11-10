@@ -289,6 +289,7 @@ ul {
 .banner-title h1 {
   font-size: 35px;
   color: #E84118;
+  display: inline-block;
   text-transform: uppercase;
 }
 
@@ -1130,4 +1131,13 @@ ul {
   .single-contact p {
     font-size: 13px;
   }
+}
+
+/* Added Css */
+.inline {
+  display: inline-block;
+}
+
+.white-text{
+  color: white;
 }
