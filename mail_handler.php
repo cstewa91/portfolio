@@ -1,8 +1,8 @@
 <?php
 require_once('email_config.php');
-require_once('phpmailer/PHPMailer/src/Exception.php');
-require_once('phpmailer/PHPMailer/src/PHPMailer.php');
-require_once('phpmailer/PHPMailer/src/SMTP.php');
+require_once('PHPMailer/src/Exception.php');
+require_once('PHPMailer/src/PHPMailer.php');
+require_once('PHPMailer/src/SMTP.php');
 $mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
 $mail->isSMTP();                // Set mailer to use SMTP.
