@@ -3,9 +3,9 @@ $(document).ready(initApp)
 function initApp() {
 	$('.contact-form').on('click', function (event) {
 		var ajaxConfig = {
-			type: post,
+			type: 'post',
 			url: 'mail_handler.php',
-			dataType: json,
+			dataType: 'json',
 			success: function (resp) {
 				console.log(resp)
 			}
