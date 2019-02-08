@@ -1,10 +1,10 @@
-// $(document).ready(initApp)
+$(document).ready(initApp)
 
-// function initApp() {
-// 	$('.contact-form').on('click', function(event){
-// 		event.preventDefault();
-// 	})
-// }
+function initApp() {
+	$('.contact-form').on('click', function(event){
+		event.preventDefault();
+	})
+}
 
 
 
