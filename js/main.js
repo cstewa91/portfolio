@@ -1,26 +1,29 @@
 $(document).ready(initApp)
 
 function initApp() {
-	$('.contact-form').on('click', function (event) {
-		var name = $('#name').val();
-		var email = $('#email').val();
-		var body = $('#body').val();
-		var ajaxConfig = {
-			type: 'post',
-			url: 'mail_handler.php',
-			dataType: 'json',
-			data: {
-				name: name,
-				email: email,
-				body: body
-			},
-			success: function (resp) {
-				console.log(resp)
-			}
-		}
-		event.preventDefault();
-		$.ajax(ajaxConfig)
-	})
+	$('#send-btn').on('click', sendEmail);
+}
+
+function sendEmail() {
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var body = $('#body').val();
+	var ajaxConfig = {
+		type: 'post',
+		url: 'mail_handler.php',
+		dataType: 'json',
+		data: {
+			name: name,
+			email: email,
+			body: body
+		},
+	}
+	event.preventDefault();
+	$.ajax(ajaxConfig)
+}
+
+function emailSubmitMessage() {
+	
 }
 
 
