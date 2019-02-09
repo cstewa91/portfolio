@@ -42,18 +42,17 @@
 							<ul class="nav-list nav-open" id="nav">
 								<li><a href="index.html">home</a></li>
 								<li><a href="about.html">about</a></li>
-								<li><a href="resume.html">resume</a></li>
 								<li><a href="portfolio.html">portfolio</a></li>
 								<li><a href="contact.html" class="current">contact</a></li>
 							</ul>
 						</nav>
 						<div class="header-social">
-							<ul>
-								<li><a href="https://github.com/cstewa91" target="blank"><i class="fab fa-github"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/collin-stewart-492989139" target="blank"><i class="fab fa-linkedin"></i></a></li>
-								<li><a href="collin_resume.pdf" target="blank"><i class="fas fa-file-pdf"></i></a></li>
-							</ul>
-						</div>
+								<div class="social-icon-header">
+									<a href="https://github.com/cstewa91" target="blank"><i class="fab fa-github"></i></a>
+									<a href="https://www.linkedin.com/in/collin-stewart-492989139" target="blank"><i class="fab fa-linkedin"></i></a>
+									<a href="collin_resume.pdf" target="blank"><i class="fas fa-file-pdf"></i></a>
+								</div>
+							</div>
 					</header>
 				</div>
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -90,21 +89,21 @@
 							</div>
 							<div class="contact-form">
 								<h4>Get in Touch</h4>
-								<form action="mail_handler.php" method="post">
+								<form >
 									<div class="single-input">
 										<label for="name">Name<span>*</span></label>
-										<input class="white-text" type="text" name="name" />
+										<input class="white-text" type="text" name="name" id="name"/>
 									</div>
 									<div class="single-input">
 										<label for="email">Email<span>*</span></label>
-										<input class="white-text" type="email" name="email" />
+										<input class="white-text" type="email" name="email" id="email" />
 									</div>
 									<div class="single-input">
 										<label for="message">Type your message </label>
 										<textarea class="white-text" name="body" id="body"></textarea>
 									</div>
 									<div class="single-input">
-										<input type="submit" value="send message" />
+										<input type="submit" value="send message" id="send-btn" />
 									</div>
 								</form>
 							</div>
