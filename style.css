@@ -170,14 +170,14 @@ ul {
   padding: 60px 35px 50px 103px;
 }
 
-.header-social ul>li {
-  float: left;
+.social-icon-header a {
   font-size: 25px;
   margin-right: 25px;
+  color: #fff;
 }
 
-.header-social ul>li>a>i {
-  color: #999696;
+.social-icon-header a:hover {
+  color: #E84118;
 }
 
 .copyright-area {
@@ -1196,8 +1196,8 @@ ul {
     max-width: -o-min-content;
     max-width: min-content;
     margin: 1rem auto;
-    background: #222;
-    color: #fff !important;
+    background: #fff;
+    color: #222 !important;
     text-align: center;
     padding: 1rem;
     border-radius: .25em;
@@ -1208,7 +1208,7 @@ ul {
   }
 
   .toggle-menu:hover {
-    background: #797979;
+    background: rgb(165, 46, 16);
   }
 
   .nav-list {
@@ -1256,7 +1256,12 @@ ul {
   }
 
   .header-social {
-    padding: 15px 35px 50px 72px;
+    padding: 15px 35px 50px 51px;
+  }
+
+  .social-icon-header {
+    display: flex;
+    justify-content: center;
   }
 
   .single-homepage-slide {
