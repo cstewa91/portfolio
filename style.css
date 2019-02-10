@@ -926,7 +926,7 @@ a.reply-btn {
   text-align: center;
 }
 
-.portfolio-title > h5{
+.portfolio-title>h5 {
   color: rgba(255, 255, 255, 0.746);
   transition: all .5s ease;
 }
@@ -935,7 +935,7 @@ a.reply-btn {
   margin-bottom: 15px;
 }
 
-.portfolio-text > p{
+.portfolio-text>p {
   color: rgba(255, 255, 255, 0.829);
 }
 
@@ -968,6 +968,7 @@ a.reply-btn {
   position: relative;
   z-index: 1;
   margin-bottom: 35px;
+  transition: all .5s ease;
 }
 
 .portfolio-body {
@@ -979,9 +980,9 @@ a.reply-btn {
   font-size: 13px;
 }
 
-/* .single-portfolio:hover > .portfolio-item {
+.single-portfolio:hover {
   transform: scale(1.09);
-} */
+}
 
 .single-portfolio:hover div>h5 {
   color: #E84118;
