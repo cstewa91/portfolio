@@ -191,7 +191,14 @@ hr {
   transition: all .5s ease;
 }
 
-.social-icon-header a:hover {
+.stuff {
+  font-size: 25px;
+  margin-right: 25px;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.stuff:hover {
   color: #E84118;
 }
 
