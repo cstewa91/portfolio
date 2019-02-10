@@ -184,7 +184,7 @@ hr {
   padding: 60px 35px 50px 103px;
 }
 
-.social-icon-header a {
+.social-icon-header > a {
   font-size: 25px;
   margin-right: 25px;
   color: #fff;
