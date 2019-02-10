@@ -100,6 +100,10 @@ hr {
   background-color: white;
 }
 
+.hide {
+  display: none;
+}
+
 
 /* ==========================================================================
    Author's custom styles
@@ -491,6 +495,37 @@ hr {
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
+}
+
+.check-mark {
+  font-size: 45px;
+  color: #E84118;
+}
+
+.submit-icon {
+  width: 0px;
+  height: 50px;
+  transition: width 1s;
+  overflow: hidden;
+}
+
+.submit-message {
+  font-size: 20px;
+}
+
+.check-mark-animation {
+  width: 60px;
+  display: inline-block;
+}
+
+.submit-message-animation {
+  animation: fadein 2s;
+  display: inline-block;
+}
+
+.submit-message-container {
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* ................................
@@ -1346,12 +1381,16 @@ a.reply-btn {
   }
 
   .header-social {
-    padding: 15px 35px 50px 51px;
+    padding: 50px 35px 50px 36px;
   }
 
   .social-icon-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .social-icon-header a {
+    margin: 0;
   }
 
   .single-homepage-slide {
@@ -1514,6 +1553,11 @@ a.reply-btn {
   .single-contact p {
     font-size: 13px;
   }
+
+  .single-portfolio {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 /* Added Css */
@@ -1523,4 +1567,14 @@ a.reply-btn {
 
 .white-text {
   color: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

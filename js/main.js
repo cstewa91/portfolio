@@ -19,11 +19,20 @@ function sendEmail() {
 		},
 	}
 	event.preventDefault();
-	$.ajax(ajaxConfig)
+	if(name !== "" && email !== "" && body !== "")
+	// $.ajax(ajaxConfig)
+	emailSubmitMessage()
 }
 
 function emailSubmitMessage() {
-	
+	$('.contact-form').addClass('hide');
+	$('.submit-message-container').removeClass('hide')
+	setTimeout(function() {
+		$('.submit-icon').addClass('check-mark-animation')
+	}, 250)
+	setTimeout(function() {
+		$('.submit-message').removeClass('hide').addClass('submit-message-animation')
+	}, 250)
 }
 
 
