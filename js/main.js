@@ -19,18 +19,19 @@ function sendEmail() {
 		},
 	}
 	event.preventDefault();
-	// if(name !== "" && email !== "" && body !== "") 
-	// $.ajax(ajaxConfig)
-	emailSubmitMessage()
+	if (name !== "" && email !== "" && body !== "") {
+		$.ajax(ajaxConfig)
+		emailSubmitMessage()
+	}
 }
 
 function emailSubmitMessage() {
 	$('.contact-form').addClass('hide');
 	$('.submit-message-container').removeClass('hide')
-	setTimeout(function() {
+	setTimeout(function () {
 		$('.submit-icon').addClass('check-mark-animation')
 	}, 250)
-	setTimeout(function() {
+	setTimeout(function () {
 		$('.submit-message').removeClass('hide').addClass('submit-message-animation')
 	}, 250)
 }
@@ -45,7 +46,9 @@ function emailSubmitMessage() {
 
 		$('#status').fadeOut();
 		$('#preloader').delay(100).fadeOut('fast');
-		$('body').delay(100).css({ 'overflow': 'visible' });
+		$('body').delay(100).css({
+			'overflow': 'visible'
+		});
 
 		$('.all-portfolios').isotope({
 			itemSelector: '.single-portfolio'
