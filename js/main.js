@@ -19,8 +19,8 @@ function sendEmail() {
 		},
 	}
 	event.preventDefault();
-	if(name !== "" && email !== "" && body !== "")
-	$.ajax(ajaxConfig)
+	// if(name !== "" && email !== "" && body !== "") 
+	// $.ajax(ajaxConfig)
 	emailSubmitMessage()
 }
 

@@ -100,9 +100,6 @@ hr {
   background-color: white;
 }
 
-.hide {
-  display: none;
-}
 
 
 /* ==========================================================================
@@ -524,8 +521,11 @@ hr {
 }
 
 .submit-message-container {
+  height: 209px;
   text-align: center;
   margin-top: 50px;
+  display: flex;
+  align-items: center;
 }
 
 /* ................................
@@ -1568,6 +1568,10 @@ a.reply-btn {
 
 .white-text {
   color: white;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes fadein {
