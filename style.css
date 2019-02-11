@@ -186,19 +186,11 @@ hr {
 
 .social-icon-header > a {
   font-size: 25px;
-  margin-right: 25px;
   color: #fff;
   transition: all .5s ease;
 }
 
-.stuff {
-  font-size: 25px;
-  margin-right: 25px;
-  color: #fff;
-  transition: all .5s ease;
-}
-
-.stuff:hover {
+.social-icon-header > a:hover {
   color: #E84118;
 }
 
@@ -1393,7 +1385,7 @@ a.reply-btn {
 
   .social-icon-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .social-icon-header a {
