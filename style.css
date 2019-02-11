@@ -186,6 +186,7 @@ hr {
 
 .social-icon-header > a {
   font-size: 25px;
+  margin-right: 25px;
   color: #fff;
   transition: all .5s ease;
 }
@@ -1386,6 +1387,7 @@ a.reply-btn {
   .social-icon-header {
     display: flex;
     justify-content: space-evenly;
+    margin-right: 0px;
   }
 
   .social-icon-header a {
