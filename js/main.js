@@ -20,7 +20,7 @@ function sendEmail() {
 	}
 	event.preventDefault();
 	if(name !== "" && email !== "" && body !== "")
-	// $.ajax(ajaxConfig)
+	$.ajax(ajaxConfig)
 	emailSubmitMessage()
 }
 
