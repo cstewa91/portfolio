@@ -528,6 +528,15 @@ hr {
   align-items: center;
 }
 
+.add-margin {
+  margin-bottom: 45px;
+}
+
+.error {
+  color: #E84118;
+  margin-top: 7.5px;
+}
+
 /* ................................
    8. Resume Page Styles
    ................................ */
