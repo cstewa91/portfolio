@@ -8,6 +8,23 @@ function sendEmail() {
 	var name = $('#name').val();
 	var email = $('#email').val();
 	var body = $('#body').val();
+	var allVaild = true
+	var formFields = [{
+			name: name,
+			select: 'name',
+			regex: /\S/
+		},
+		{
+			name: email,
+			select: 'email',
+			regex: /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+		},
+		{
+			name: body,
+			select: "message",
+			regex: /\S/
+		}
+	]
 	var ajaxConfig = {
 		type: 'post',
 		url: 'mail_handler.php',
@@ -19,7 +36,16 @@ function sendEmail() {
 		},
 	}
 	event.preventDefault();
-	if (name !== "" && email !== "" && body !== "") {
+	for (var arrayIndex = 0; arrayIndex < formFields.length; arrayIndex++) {
+		var currentField = formFields[arrayIndex];
+		$('.' + 'error-' + currentField.select).addClass('hide');
+		if (!currentField.regex.test(currentField.name)) {
+			$('.' + 'error-' + currentField.select).removeClass('hide');
+			allVaild = false;
+		}
+	}
+
+	if (allVaild) {
 		$.ajax(ajaxConfig)
 		emailSubmitMessage()
 	}
