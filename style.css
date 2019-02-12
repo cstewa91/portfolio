@@ -537,6 +537,24 @@ hr {
   margin-top: 7.5px;
 }
 
+.email > a:hover > i {
+  background: #E84118;
+  color: #E3E3E3;
+}
+
+.email > a:hover > p {
+  color: #E84118;
+}
+
+.phone-number > a:hover > i {
+  background: #E84118;
+  color: #E3E3E3;
+}
+
+.phone-number > a:hover > p {
+  color: #E84118;
+}
+
 /* ................................
    8. Resume Page Styles
    ................................ */
