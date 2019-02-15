@@ -555,6 +555,15 @@ hr {
   color: #E84118;
 }
 
+.location > a:hover > i {
+  background: #E84118;
+  color: #E3E3E3;
+}
+
+.location > a:hover > p {
+  color: #E84118;
+}
+
 /* ................................
    8. Resume Page Styles
    ................................ */
