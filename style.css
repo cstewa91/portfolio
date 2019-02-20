@@ -357,7 +357,7 @@ hr {
   z-index: 1;
 }
 
-.minimized-width-text:after {
+/* .minimized-width-text:after {
   position: absolute;
   top: 33%;
   left: 0;
@@ -366,7 +366,7 @@ hr {
   content: "";
   border-left: 3px solid #e84118;
   z-index: -1;
-}
+} */
 
 .about-slider {
   margin-top: 65px;
