@@ -355,6 +355,7 @@ hr {
 .minimized-width-text {
   position: relative;
   z-index: 1;
+  font-size: 17px;
 }
 
 /* .minimized-width-text:after {
@@ -403,8 +404,16 @@ hr {
 /* ................................
    7. Contact Page Styles
    ................................ */
+
+.single-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .single-contact p {
   color: #f1f1f1;
+  transition: all .5s ease;
 }
 
 .contact-text {
@@ -429,6 +438,7 @@ hr {
   border-radius: 50%;
   padding-top: 10px;
   color: #E84118;
+  transition: all .5s ease;
 }
 
 .single-contact p {
